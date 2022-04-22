@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn {
+    @apply h-7 hover:transition-transform duration-200 ease-out cursor-pointer;
+  }
+}
