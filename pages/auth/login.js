@@ -1,8 +1,21 @@
+import { NextSeo } from "next-seo";
 import { getProviders, signIn } from "next-auth/react";
 
 export default function login({ providers }) {
   return (
     <>
+      <NextSeo
+        title="Not Instagram | Login"
+        description="Next.js Instagram Clone."
+        canonical="https://not-instagram.vercel.app/"
+        openGraph={{
+          type: "website",
+          locale: "en_US",
+          url: "https://not-instagram.vercel.app/",
+          site_name: "Not Instagram | Login",
+          description: "Next.js Instagram Clone.",
+        }}
+      />
       <div className="flex justify-center mt-20">
         <img
           className="hidden object-cover md:inline-flex md:w-96"
