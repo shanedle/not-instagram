@@ -27,13 +27,14 @@ export default function Feed() {
           <section className="md:col-span-2">
             <Posts />
           </section>
-          <section className="hidden md:inline-grid md:col-span-1">
+
+          <aside className="hidden md:inline-grid md:col-span-1">
             <div className="fixed w-[380px]">
               <UserProfile />
               <Suggestions />
               <Footer />
             </div>
-          </section>
+          </aside>
         </>
       )}
     </main>

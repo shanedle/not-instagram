@@ -30,9 +30,9 @@ export default function Header() {
           {session && (
             <div className="flex space-x-4 items-center">
               <HiHome
-                onClick={() => router.push("/")}
                 size="2em"
                 className="cursor-pointer"
+                onClick={() => router.push("/")}
               />
 
               <HiOutlinePlusCircle
